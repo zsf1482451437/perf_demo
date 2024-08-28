@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .placeholder {
+      height: 900px; /* 占位符高度，确保图片在初始加载时在视口外 */
+      background-color: #f0f0f0;
+    }
+  </style>
+  <body>
+    <div class="placeholder"></div>
+    <!-- 占位符内容 -->
+    <div class="grid">
+      <img
+        alt="Photograph of a sandy landscape."
+        width="800"
+        height="600"
+        src="./images/image-1.jpg"
+      />
+      <img
+        alt="Photograph of a table and chairs in the foreground with the sea in the background."
+        width="800"
+        height="600"
+        src="./images/image-2.jpg"
+      />
+      <img
+        alt="Photograph of a blue shallow sea with four deckchairs and an umbrella in the foreground on the rocks."
+        width="800"
+        height="600"
+        src="./images/image-3.jpg"
+        loading="lazy"
+      />
+      <img
+        alt="Aerial photograph of a green body of water surrounded by rocks."
+        width="800"
+        height="600"
+        src="./images/image-4.jpg"
+        loading="lazy"
+      />
+    </div>
+  </body>
+</html>
