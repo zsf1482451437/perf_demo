@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8rem;
+      }
+      .iframe {
+        width: 100%;
+      }
+      .placeholder {
+        height: 3000px; /* 占位符高度，确保图片在初始加载时在视口外 */
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 占位符内容 -->
+    <div class="grid">
+      <iframe
+        title="Inline Frame Example"
+        width="400"
+        height="400"
+        src="./1.html"
+        class="iframe"
+      >
+      </iframe>
+      <div class="placeholder"></div>
+      <iframe
+        title="Inline Frame Example"
+        width="400"
+        height="400"
+        src="./2.html"
+        class="iframe"
+        loading="lazy"
+      >
+      </iframe>
+    </div>
+  </body>
+</html>
